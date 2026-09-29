@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gajardo Erl · Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="logo">Erl Jhon Gajardo</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+    <p class="section-subtitle">A selection of things I've built recently.</p>
+
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web App</button>
+      <button class="filter-btn" data-filter="ui">UI/UX</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card" data-category="web">
+        <img src="https://picsum.photos/seed/proj1/600/400" alt="E-commerce Dashboard">
+        <div class="project-info">
+          <h3>E-commerce Dashboard</h3>
+          <p>A full-featured admin dashboard with real-time analytics, product management, and sales reports.</p>
+          <div class="tech-tags">
+            <span>React</span><span>Node.js</span><span>Chart.js</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ui">
+        <img src="https://picsum.photos/seed/proj2/600/400" alt="Travel Booking UI">
+        <div class="project-info">
+          <h3>Travel Booking UI</h3>
+          <p>A sleek, modern travel booking interface with smooth micro-interactions and a clean design system.</p>
+          <div class="tech-tags">
+            <span>Figma</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="mobile">
+        <img src="https://picsum.photos/seed/proj3/600/400" alt="Fitness Tracker App">
+        <div class="project-info">
+          <h3>Fitness Tracker App</h3>
+          <p>Cross-platform mobile app to log workouts, track progress, and share achievements with friends.</p>
+          <div class="tech-tags">
+            <span>React Native</span><span>Firebase</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <img src="https://picsum.photos/seed/proj4/600/400" alt="Portfolio Website">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio with dark mode, smooth scrolling, and animated sections.</p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
